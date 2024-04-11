@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "6bafe02f7bdcfe0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "85df643a647834b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1fb5d1882b4a041a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "数据结构与算法/二叉树/层序遍历/层序遍历.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd3057db4c32623e",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2816597d90b92b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a02bedd147d0204",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "custom"
+              }
+            }
+          },
+          {
+            "id": "ab1475f04f6fd51d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b1e2ea3f379a6bbc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "93b6438d1ab4f694",
+    "type": "split",
+    "children": [
+      {
+        "id": "d37fab3cc1794019",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "347719c9f6992677",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "数据结构与算法/二叉树/层序遍历/层序遍历.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "73a0f3527bd51890",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "数据结构与算法/二叉树/层序遍历/层序遍历.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d081e4eaaab0bd5b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "173109e4c18310af",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "数据结构与算法/二叉树/层序遍历/层序遍历.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "pkmer:Open Pkmer Market": false,
+      "obsidian42-brat:BRAT": false
+    }
+  },
+  "active": "1fb5d1882b4a041a",
+  "lastOpenFiles": [
+    "Resourses/Pasted image 20240411201235.png",
+    "Resourses/Pasted image 20240411213212.png",
+    "数据结构与算法/二叉树/回溯+二叉树/路径总和.md",
+    "数据结构与算法/二叉树/回溯+二叉树/找树左下角的值.md",
+    "编程语言学习/Java/Java语法基础.md",
+    "Resourses/Pasted image 20240411213152.png",
+    "Resourses/Pasted image 20240411212535.png",
+    "编程语言学习/Java/Java技术体系和IDEA应用.md",
+    "Resourses/Pasted image 20240411204704.png",
+    "Resourses/Pasted image 20240411204407.png",
+    "Resourses/Pasted image 20240411203443.png",
+    "Resourses/Pasted image 20240411203102.png",
+    "Resourses/Pasted image 20240411202738.png",
+    "Resourses/Pasted image 20240411202624.png",
+    "Resourses/Pasted image 20240411201507.png",
+    "项目/苍穹外卖/Day 01 配置项目环境.md",
+    "项目/苍穹外卖/项目一览.md",
+    "项目/苍穹外卖/数据库设计文档.md",
+    "数据结构与算法/二叉树/回溯+二叉树/路径总和 II.md",
+    "数据结构与算法/二叉树/层序遍历/二叉树的层平均值.md",
+    "数据结构与算法/二叉树/层序遍历/二叉树的右视图.md",
+    "数据结构与算法/二叉树/层序遍历/填充每个节点的下一个右侧节点指针.md",
+    "数据结构与算法/二叉树/层序遍历/在每个树行中找最大值.md",
+    "数据结构与算法/二叉树/层序遍历/N叉树的层序遍历.md",
+    "数据结构与算法/二叉树/完全二叉树的节点个数.md",
+    "数据结构与算法/二叉树/对称二叉树/对称二叉树.md",
+    "数据结构与算法/二叉树/翻转二叉树.md",
+    "数据结构与算法/二叉树/迭代遍历.md",
+    "数据结构与算法/二叉树/回溯+二叉树/二叉树的所有路径.md",
+    "数据结构与算法/二叉树/回溯+二叉树",
+    "数据结构与算法/二叉树/平衡二叉树.md",
+    "数据结构与算法/二叉树/层序遍历/层序遍历.md",
+    "项目/苍穹外卖/数据库结构.md",
+    "小Tips/Git.md",
+    "项目/未命名",
+    "数据结构与算法/二叉树/左叶子之和.md",
+    "数据结构与算法/二叉树/构造二叉树/从中序与后序遍历序列构造二叉树.md",
+    "数据结构与算法/二叉树/构造二叉树/从前序与中序遍历序列构造二叉树.md",
+    "数据结构与算法/二叉树/构造二叉树",
+    "项目/苍穹外卖/Day01",
+    "项目/苍穹外卖",
+    "未命名",
+    "项目",
+    "数据结构与算法/二叉树/对称二叉树",
+    "实验室",
+    "数据结构与算法/二叉树/层序遍历",
+    "未命名.canvas"
+  ]
+}
