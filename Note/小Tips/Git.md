@@ -22,4 +22,9 @@ Idea上若想**删除分支**需要提前移动到另一个分支。
 步骤四：巧妙删除多个分支  
 如果需要一次性删除多个分支，可以使用`git branch -d`命令的参数`-d`结合分支名一起使用。或者，也可以使用`-D`选项来删除多个分支。`git branch -D branchname1 branchname2 branchname3`  
 
+### git上传到GitHub的常见问题解决方法：
+
+[解决 Github port 443 : Timed out - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/636418854)
+
+[github开发人员在七夕搞事情：remote: Support for password authentication was removed on August 13, 2021._github remote support for password authentication -CSDN博客](https://shliang.blog.csdn.net/article/details/119698015)
 
