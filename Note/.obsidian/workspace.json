@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的插入操作.md",
+                "file": "数据结构与算法/二叉树/构造二叉树/将有序数组转换为二叉搜索树.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的插入操作.md",
+                "file": "数据结构与算法/二叉树/构造二叉树/将有序数组转换为二叉搜索树.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的插入操作.md",
+                "file": "数据结构与算法/二叉树/构造二叉树/将有序数组转换为二叉搜索树.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的插入操作.md"
+                "file": "数据结构与算法/二叉树/构造二叉树/将有序数组转换为二叉搜索树.md"
               }
             }
           }
@@ -148,33 +148,38 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "cefcb34accc27832",
+  "active": "3a02bedd147d0204",
   "lastOpenFiles": [
+    "Pasted image 20240416130624.png",
+    "Pasted image 20240416130606.png",
+    "Pasted image 20240416130543.png",
+    "数据结构与算法/二叉树/二叉搜索树/修剪二叉搜索树.md",
+    "数据结构与算法/二叉树/构造二叉树/将有序数组转换为二叉搜索树.md",
+    "Pasted image 20240416105836.png",
+    "Pasted image 20240416105809.png",
+    "数据结构与算法/二叉树/二叉搜索树/删除二叉搜索树中的节点.md",
+    "450.删除二叉搜索树中的节点.gif",
+    "Pasted image 20240416102106.png",
+    "Pasted image 20240416102047.png",
+    "Pasted image 20240416101515.png",
+    "编程语言学习/Java/JavaSE 笔记（二）面向对象基础篇.md",
+    "编程语言学习/Java/JavaSE 笔记（三）面向对象高级篇.md",
+    "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的插入操作.md",
     "数据结构与算法/二叉树/回溯+二叉树/二叉树的最近公共祖先.md",
     "Resourses/Pasted image 20240414201721.png",
-    "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的插入操作.md",
     "数据结构与算法/二叉树/二叉搜索树/二叉搜索树的最近公共祖先.md",
     "Resourses/Pasted image 20240415233137.png",
-    "Resourses/Pasted image 20240415233124.png",
-    "Resourses/Pasted image 20240415232644.png",
     "数据结构与算法/二叉树/回溯+二叉树/未命名.md",
-    "Resourses/Pasted image 20240415211053.png",
-    "Resourses/Pasted image 20240415211028.png",
-    "Resourses/Pasted image 20240415210959.png",
-    "编程语言学习/Java/JavaSE 笔记（二）面向对象基础篇.md",
     "编程语言学习/Java/JavaSE 笔记（一）面向过程编程.md",
     "Users/nagocoler/Library/Application.md",
     "Users/nagocoler/Library",
     "Users/nagocoler",
     "Users",
     "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的众数.md",
-    "Resourses/Pasted image 20240414201744.png",
-    "Resourses/Pasted image 20240412092210.png",
     "编程语言学习/Java/Java语法基础.md",
     "编程语言学习/Java/Java技术体系和IDEA应用.md",
     "编程语言学习/Java/JavaSE 笔记（六）多线程与反射.md",
     "编程语言学习/Java/JavaSE 笔记（五）集合类与IO.md",
-    "Resourses/617.合并二叉树.gif",
     "数据结构与算法/二叉树/二叉搜索树/验证二叉搜索树.md",
     "数据结构与算法/二叉树/二叉搜索树/二叉搜索树的最小绝对差.md",
     "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的搜索.md",
@@ -183,12 +188,8 @@
     "数据结构与算法/二叉树/理论基础^二叉.md",
     "数据结构与算法/二叉树/二叉搜索树",
     "编程语言学习/Java/JavaSE 笔记（四）泛型程序设计.md",
-    "编程语言学习/Java/JavaSE 笔记（三）面向对象高级篇.md",
     "数据结构与算法/数组/移除元素.md",
     "数据结构与算法/双指针法.md",
-    "数据结构与算法/二叉树/构造二叉树/合并二叉树.md",
-    "数据结构与算法/二叉树/构造二叉树/最大二叉树.md",
-    "数据结构与算法/二叉树/构造二叉树/从前序与中序遍历序列构造二叉树.md",
     "数据结构与算法/二叉树/回溯+二叉树",
     "项目/未命名",
     "数据结构与算法/二叉树/构造二叉树",
