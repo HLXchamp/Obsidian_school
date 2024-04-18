@@ -76,7 +76,7 @@ public static void main(String[] args) {
 }
 ```
 
-这里就是自动拆箱，得益于包装类型的自动装箱和拆箱机制，我们可以让包装类型轻松地参与到基本类型的运算中：
+这里就是**自动拆箱**，得益于包装类型的自动装箱和拆箱机制，我们可以让包装类型轻松地参与到基本类型的运算中：
 
 ```java
 public static void main(String[] args) {
@@ -116,7 +116,7 @@ public static Integer valueOf(int i) {
 }
 ```
 
-IntegerCache会默认缓存-128~127之间的所有值，将这些值提前做成包装类放在数组中存放，虽然我们目前还没有学习数组，但是各位小伙伴只需要知道，我们如果直接让 -128~127之间的值自动装箱为Integer类型的对象，那么始终都会得到同一个对象，这是为了提升效率，因为小的数使用频率非常高，有些时候并不需要创建那么多对象，创建对象越多，内存也会消耗更多。
+IntegerCache会默认缓存-128~127之间的所有值，将这些值提前做成包装类放在数组中存放，虽然我们目前还没有学习数组，但是各位小伙伴只需要知道，我们如果直接**让 -128~127之间的值自动装箱为Integer类型的对象，那么始终都会得到同一个对象**，这是为了**提升效率**，因为小的数使用频率非常高，有些时候并不需要创建那么多对象，创建对象越多，内存也会消耗更多。
 
 但是如果超出这个缓存范围的话，就会得到不同的对象了：
 
@@ -129,7 +129,7 @@ public static void main(String[] args) {
 
 这样就不会得到同一个对象了，因为超出了缓存的范围。同样的，Long、Short、Byte类型的包装类也有类似的机制，感兴趣的小伙伴可以自己点进去看看。
 
-我们来看看包装类中提供了哪些其他的方法，包装类支持字符串直接转换：
+我们来看看包装类中提供了哪些其他的方法，**包装类支持字符串直接转换**：
 
 ```java
 public static void main(String[] args) {
@@ -138,7 +138,7 @@ public static void main(String[] args) {
 }
 ```
 
-当然，字符串转Integer有多个方法：
+这种方法在Java 9及以后版本已经被标记为过时（Deprecated），不推荐使用。推荐的做法是使用静态方法`Integer.valueOf(String s)`或`Integer.parseInt(String s)`来实现同样的功能。当然，字符串转Integer有多个方法：
 
 ```java
 public static void main(String[] args) {
@@ -171,7 +171,7 @@ public static void main(String[] args) {
 
 除了我们上面认识的这几种基本类型包装类之外，还有两个比较特殊的包装类型。
 
-其中第一个是用于计算超大数字的BigInteger，我们知道，即使是最大的long类型，也只能表示64bit的数据，无法表示一个非常大的数，但是BigInteger没有这些限制，我们可以让他等于一个非常大的数字：
+其中第一个是用于计算超大数字的`BigInteger`，我们知道，即使是最大的long类型，也只能表示64bit的数据，无法表示一个非常大的数，但是`BigInteger`没有这些限制，我们可以让他等于一个非常大的数字：
 
 ```java
 public static void main(String[] args) {
@@ -210,7 +210,7 @@ public static void main(String[] args) {
 
 一般情况，对于非常大的整数计算，我们就可以使用BigInteger来完成。
 
-我们接着来看第二种，前面我们说了，浮点类型精度有限，对于需要精确计算的场景，就没办法了，而BigDecimal可以实现小数的精确计算。
+我们接着来看第二种，前面我们说了，浮点类型精度有限，对于需要精确计算的场景，就没办法了，而`BigDecimal`可以实现小数的精确计算。
 
 ```java
 public static void main(String[] args) {
@@ -248,7 +248,7 @@ public static void main(String[] args) {
 }
 ```
 
-注意，数组类型比较特殊，它本身也是类，但是编程不可见（底层C++写的，在运行时动态创建）即使是基本类型的数组，也是以对象的形式存在的，并不是基本数据类型。所以，我们要创建一个数组，同样需要使用`new `关键字：
+注意，数组类型比较特殊，它本身也是类，但是编程不可见（底层C++写的，在运行时动态创建）即使是基本类型的数组，也是以对象的形式存在的，并不是基本数据类型。所以，我们要创建一个数组，同样需要使用`new `关键字（在创建数组时，**需要指定数组长度**）：
 
 ```java
 public static void main(String[] args) {
@@ -297,7 +297,7 @@ public static void main(String[] args) {
 }
 ```
 
-注意，这个`length`是在一开始就确定的，而且是`final`类型的，不允许进行修改，也就是说数组的长度一旦确定，不能随便进行修改，如果需要使用更大的数组，只能重新创建。
+注意，这个`length`是在一开始就确定的，而且是`final`类型的，不允许进行修改，也就是说**数组的长度一旦确定，不能随便进行修改**，如果需要使用更大的数组，只能重新创建。
 
 当然，既然是类型，那么肯定也是继承自Object类的：
 
@@ -353,7 +353,7 @@ public static void main(String[] args) {   //反编译的结果
 }
 ```
 
-对于这种普通的数组，其实使用还是挺简单的。这里需要特别说一下，对于基本类型的数组来说，是不支持自动装箱和拆箱的：
+对于这种普通的数组，其实使用还是挺简单的。这里需要特别说一下，**对于基本类型的数组**来说，是**不支持自动装箱和拆箱的**：
 
 ```java
 public static void main(String[] args) {
@@ -411,9 +411,7 @@ public static void main(String[] args) {
 
 ```java
 public static void main(String[] args) {
-    int[][] arr = new int[][]{{1, 2},
-            									{3, 4},
-            									{5, 6}};
+    int[][] arr = new int[][]{{1, 2}, {3, 4}, {5, 6}};
     for (int i = 0; i < 3; i++) {    //要遍历一个二维数组，那么我们得一列一列一行一行地来
         for (int j = 0; j < 2; j++) {
             System.out.println(arr[i][j]);
@@ -499,11 +497,11 @@ java com/test/Main lbwnb aaaa xxxxx   #放在包中需要携带主类完整路�
 
 ## 字符串
 
-字符串类是一个比较特殊的类，它用于保存字符串。我们知道，基本类型`char`可以保存一个2字节的Unicode字符，而字符串则是一系列字符的序列（在C中就是一个字符数组）Java中没有字符串这种基本类型，因此只能使用类来进行定义。注意，字符串中的字符一旦确定，无法进行修改，只能重新创建。
+字符串类是一个比较特殊的类，它用于保存字符串。我们知道，基本类型`char`可以保存一个2字节的Unicode字符，而字符串则是一系列字符的序列（在C中就是一个字符数组）Java中没有字符串这种基本类型，因此只能使用类来进行定义。注意，**字符串中的字符一旦确定，无法进行修改**，只能重新创建。
 
 ### String类
 
-String本身也是一个类，只不过它比较特殊，每个用双引号括起来的字符串，都是String类型的一个实例对象：
+String本身也是一个类，只不过它比较特殊，每个用**双引号**括起来的字符串，都是String类型的一个实例对象：
 
 ```java
 public static void main(String[] args) {
@@ -519,7 +517,7 @@ public static void main(String[] args) {
 }
 ```
 
-注意，如果是直接使用双引号创建的字符串，如果内容相同，为了优化效率，那么始终都是同一个对象：
+注意，如果是**直接使用双引号创建的字符串**，如果内容相同，为了优化效率，那么**始终都是同一个对象**：
 
 ```java
 public static void main(String[] args) {
@@ -572,7 +570,7 @@ public static void main(String[] args) {
 public static void main(String[] args) {
     String str = "Hello World";
     String sub = str.substring(0, 3);   //分割字符串，并返回一个新的子串对象
-    System.out.println(sub);
+    System.out.println(sub); // 输出字符串 "Hel"
 }
 ```
 
@@ -581,7 +579,7 @@ public static void main(String[] args) {
     String str = "Hello World";
     String[] strings = str.split(" ");   //使用split方法进行字符串分割，比如这里就是通过空格分隔，得到一个字符串数组
     for (String string : strings) {
-        System.out.println(string);
+        System.out.println(string); 
     }
 }
 ```
@@ -657,7 +655,7 @@ public static void main(String[] args) {
 }
 ```
 
-这里创建了一个StringBuilder的类型，这个类型是干嘛的呢？实际上它就是专门用于构造字符串的，我们可以使用它来对字符串进行拼接、裁剪等操作，它就像一个字符串编辑器，弥补了字符串不能修改的不足：
+这里创建了一个`StringBuilder`的类型，这个类型是干嘛的呢？实际上它就是**专门用于构造字符串**的，我们可以使用它来对字符串进行拼接、裁剪等操作，它就像一个**字符串编辑器**，弥补了字符串不能修改的不足：
 
 ```java
 public static void main(String[] args) {
@@ -674,7 +672,7 @@ public static void main(String[] args) {
 public static void main(String[] args) {
     StringBuilder builder = new StringBuilder("AAABBB");   //在构造时也可以指定初始字符串
     builder.delete(2, 4);   //删除2到4这个范围内的字符
-    System.out.println(builder.toString());
+    System.out.println(builder.toString()); // AABB
 }
 ```
 
@@ -695,7 +693,7 @@ public static void main(String[] args) {
 
 > 正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。
 
-我们先来看看下面的这个例子：
+我们先来看看下面的这个例子，`matches`方法用于对给定正则表达式进行匹配：
 
 ```java
 public static void main(String[] args) {
@@ -932,7 +930,7 @@ public class Test {
 }
 ```
 
-既然是在方法中声明的类，那作用范围也就只能在方法中了：
+既然是在方法中声明的类，那**作用范围也就只能在方法中**了：
 
 ```java
 public class Test {
@@ -965,7 +963,7 @@ public abstract class Student {
 
 正常情况下，要创建一个抽象类的实例对象，只能对其进行继承，先实现未实现的方法，然后创建子类对象。
 
-而我们可以在方法中使用匿名内部类，将其中的抽象方法实现，并直接创建实例对象：
+而我们可以在方法中使用**匿名内部类**，将其中的抽象方法实现，并直接创建实例对象：
 
 ```java
 public static void main(String[] args) {
@@ -1119,7 +1117,7 @@ public static void main(String[] args) {
 }
 ```
 
-我们发现，Integer.sum的参数和返回值，跟我们在Study中定义的完全一样，所以说我们可以直接使用方法引用：
+我们发现，Integer.sum的参数和返回值，跟我们在Study中定义的完全一样，所以说我们可以直接使用方法引用，使用**双冒号**来进行方法引用，**静态方法**使用 `类名::方法名` 的：
 
 ```java
 public static void main(String[] args) {
@@ -1136,7 +1134,7 @@ public interface Study {
 }
 ```
 
-如果是普通从成员方法，我们同样需要使用对象来进行方法引用：
+如果是普通从成员方法，我们同样需要使用对象来进行方法引用，成员方法因为需要具体对象使用，所以说只能使用 `对象::方法名` 的形式：
 
 ```java
 public static void main(String[] args) {
@@ -1185,7 +1183,7 @@ private static int test(int a, int b){
 
 我们在之前其实已经接触过一些异常了，比如数组越界异常，空指针异常，算术异常等，他们其实都是异常类型，我们的每一个异常也是一个类，他们都继承自`Exception`类！异常类型本质依然类的对象，但是异常类型支持在程序运行出现问题时抛出（也就是上面出现的红色报错）也可以提前声明，告知使用者需要处理可能会出现的异常！
 
-异常的第一种类型是运行时异常，如上述的列子，在编译阶段无法感知代码是否会出现问题，只有在运行的时候才知道会不会出错（正常情况下是不会出错的），这样的异常称为运行时异常，异常也是由类定义的，所有的运行时异常都继承自`RuntimeException`。
+异常的第一种类型是**运行时异常**，如上述的列子，在编译阶段无法感知代码是否会出现问题，只有在运行的时候才知道会不会出错（正常情况下是不会出错的），这样的异常称为运行时异常，异常也是由类定义的，所有的运行时异常都继承自`RuntimeException`。
 
 ```java
 public static void main(String[] args) {
@@ -1207,7 +1205,7 @@ public static void main(String[] args) {
 
 ![image-20220924164844005](https://s2.loli.net/2022/09/24/QxMimbjZk19C25d.png)
 
-异常的另一种类型是编译时异常，编译时异常明确指出可能会出现的异常，在编译阶段就需要进行处理（捕获异常）必须要考虑到出现异常的情况，如果不进行处理，将无法通过编译！默认继承自`Exception`类的异常都是编译时异常。
+异常的另一种类型是**编译时异常**，编译时异常明确指出可能会出现的异常，在编译阶段就需要进行处理（捕获异常）必须要考虑到出现异常的情况，如果不进行处理，将无法通过编译！默认继承自`Exception`类的异常都是编译时异常。
 
 ```java
 protected native Object clone() throws CloneNotSupportedException;
@@ -1215,7 +1213,7 @@ protected native Object clone() throws CloneNotSupportedException;
 
 比如Object类中定义的`clone`方法，就明确指出了在运行的时候会出现的异常。
 
-还有一种类型是错误，错误比异常更严重，异常就是不同寻常，但不一定会导致致命的问题，而错误是致命问题，一般出现错误可能JVM就无法继续正常运行了，比如`OutOfMemoryError`就是内存溢出错误（内存占用已经超出限制，无法继续申请内存了）
+还有一种类型是**错误**，错误比异常更严重，异常就是不同寻常，但不一定会导致致命的问题，而错误是致命问题，一般出现错误可能JVM就无法继续正常运行了，比如`OutOfMemoryError`就是内存溢出错误（内存占用已经超出限制，无法继续申请内存了）
 
 ```java
 public static void main(String[] args) {
@@ -1285,7 +1283,7 @@ RuntimeException继承自Exception，Exception继承自Throwable：
 
 ### 抛出异常
 
-当别人调用我们的方法时，如果传入了错误的参数导致程序无法正常运行，这时我们就可以手动抛出一个异常来终止程序继续运行下去，同时告知上一级方法执行出现了问题：
+当别人调用我们的方法时，如果传入了错误的参数导致程序无法正常运行，这时我们就可以手动抛出一个异常来终止程序继续运行下去，同时告知上一级方法执行出现了问题，使用throw关键字来抛出异常：
 
 ```java
 public static int test(int a, int b) {
@@ -1301,7 +1299,7 @@ public static int test(int a, int b) {
 
 ![image-20220924200817314](https://s2.loli.net/2022/09/24/Ttr4kZSyodKi3M8.png)
 
-程序会终止，并且会打印栈追踪信息，因为各位小伙伴才初学，还不知道什么是栈，我们这里就简单介绍一下，实际上方法之间的调用是有层级关系的，而当异常发生时，方法调用的每一层都会在栈追踪信息中打印出来，比如这里有两个`at`，实际上就是在告诉我们程序运行到哪个位置时出现的异常，位于最上面的就是发生异常的最核心位置，我们代码的第15行。
+程序会终止，并且会打印**栈追踪信息**，因为各位小伙伴才初学，还不知道什么是栈，我们这里就简单介绍一下，实际上方法之间的调用是有层级关系的，而当异常发生时，方法调用的每一层都会在栈追踪信息中打印出来，比如这里有两个`at`，实际上就是在告诉我们程序运行到哪个位置时出现的异常，位于最上面的就是发生异常的最核心位置，我们代码的第15行。
 
 并且这里会打印出当前抛出的异常类型和我们刚刚自定义异常信息。
 
@@ -1423,7 +1421,7 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-当代码可能出现多种类型的异常时，我们希望能够分不同情况处理不同类型的异常，就可以使用多重异常捕获：
+当代码可能出现多种类型的异常时，我们希望能够分不同情况处理不同类型的异常，就可以使用**多重异常捕获**：
 
 ```java
 try {
@@ -1488,9 +1486,21 @@ try {
 
 **思考：** `try`、`catch`和`finally`执行顺序？
 
+1. **`try`块**：
+    - 代码首先执行`try`块中的代码。这是主要的业务逻辑代码，可能会抛出异常。
+2. **异常抛出**：
+    - 如果在`try`块中的代码执行过程中抛出了异常，程序会跳转到与之匹配的`catch`块进行异常处理。如果没有抛出异常，程序会跳过`catch`块，直接执行`finally`块。
+3. **`catch`块**：
+    - 如果在`try`块中抛出了异常，并且这个异常的类型匹配到了`catch`块中定义的异常类型，那么相应的`catch`块会被执行。执行完`catch`块后，程序会继续执行`finally`块。
+    - 如果`try`块中没有抛出异常，那么`catch`块会被跳过，程序会直接执行`finally`块。
+4. **`finally`块**：
+    - `finally`块中的代码总是会被执行，无论`try`块中是否抛出异常，以及是否有对应的`catch`块。
+    - 即使在`catch`块中使用了`return`语句，`finally`块的代码仍然会在`return`语句之前执行。
+    - 如果在`try`块中抛出了异常，`catch`块中捕获了异常，并在`catch`块中没有使用`return`语句，那么`finally`块会在`catch`块执行完毕后执行。
+    - 如果在`try`块中没有抛出异常，那么`finally`块会在`try`块执行完毕后执行。
 ### 断言表达式
 
-我们可以使用断言表达式来对某些东西进行判断，如果判断失败会抛出错误，只不过默认情况下没有开启断言，我们需要在虚拟机参数中手动开启一下：
+我们可以使用断言表达式来对某些东西进行判断，如果判断失败会抛出错误，只不过**默认情况下没有开启断言**，我们需要在虚拟机参数中手动开启一下：
 
 ![image-20220924220327591](https://s2.loli.net/2022/09/24/cAG8kY395fOuTLg.png)
 
@@ -1654,7 +1664,7 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
     int[] arr = new int[10];
-    Arrays.fill(arr, 66);
+    Arrays.fill(arr, 66); // 数组所有元素都是66
     System.out.println(Arrays.toString(arr));
 }
 ```
@@ -1673,7 +1683,7 @@ public static void main(String[] args) {
 ```java
 public static void main(String[] args) {
     int[] arr = new int[]{1, 2, 3, 4, 5};
-    int[] target = Arrays.copyOfRange(arr, 3, 5);   //也可以只拷贝某个范围内的内容
+    int[] target = Arrays.copyOfRange(arr, 3, 5);   //也可以只拷贝某个范围内的内容，[3, 5)
     System.out.println(Arrays.toString(target));
     System.out.println(arr == target);
 }
