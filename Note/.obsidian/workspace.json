@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "编程语言学习/Java/JavaSE 笔记（四）泛型程序设计.md",
+                "file": "编程语言学习/JavaWeb/maven/未命名.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "93b6438d1ab4f694",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "编程语言学习/Java/JavaSE 笔记（四）泛型程序设计.md",
+                "file": "编程语言学习/JavaWeb/maven/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "编程语言学习/Java/JavaSE 笔记（四）泛型程序设计.md",
+                "file": "编程语言学习/JavaWeb/maven/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "编程语言学习/Java/JavaSE 笔记（四）泛型程序设计.md"
+                "file": "编程语言学习/JavaWeb/maven/未命名.md"
               }
             }
           }
@@ -148,53 +149,53 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "060d4eff5c66b100",
+  "active": "3a02bedd147d0204",
   "lastOpenFiles": [
+    "编程语言学习/JavaWeb/学习路线.md",
+    "Pasted image 20240419182116.png",
+    "编程语言学习/JavaWeb/maven/未命名.md",
+    "编程语言学习/JavaWeb/maven",
+    "Pasted image 20240419181706.png",
+    "Resourses/Pasted image 20240418104812.png",
+    "编程语言学习/JavaWeb",
+    "数据结构与算法/回溯算法/组合总和 II.md",
+    "未命名.canvas",
+    "数据结构与算法/回溯算法/分割回文串.md",
+    "Resourses/Pasted image 20240419163925.png",
+    "数据结构与算法/回溯算法/组合总和 III.md",
+    "数据结构与算法/回溯算法/组合总和.md",
+    "数据结构与算法/回溯算法/电话号码的字母组合.md",
+    "Resourses/Pasted image 20240419094455.png",
+    "Resourses/Pasted image 20240419094423.png",
+    "编程语言学习/Java/JavaSE 笔记（四）泛型程序设计.md",
     "编程语言学习/Java/JavaSE 笔记（三）面向对象高级篇.md",
     "编程语言学习/Java/JavaSE 笔记（二）面向对象基础篇.md",
-    "数据结构与算法/回溯算法/组合总和.md",
-    "Pasted image 20240418114924.png",
-    "数据结构与算法/回溯算法/电话号码的字母组合.md",
-    "数据结构与算法/回溯算法/组合总和 III.md",
+    "Resourses/Pasted image 20240418114924.png",
     "数据结构与算法/哈希表/四数之和.md",
     "数据结构与算法/哈希表/三数之和.md",
     "数据结构与算法/哈希表/两数之和.md",
-    "Pasted image 20240418105212.png",
-    "Pasted image 20240418104812.png",
-    "未命名.canvas",
+    "Resourses/Pasted image 20240418105212.png",
     "数据结构与算法/回溯算法/组合问题+剪枝.md",
     "数据结构与算法/回溯算法/理论基础.md",
-    "Pasted image 20240418093313.png",
+    "Resourses/Pasted image 20240418093313.png",
     "编程语言学习/Java/JavaSE 笔记（五）集合类与IO.md",
-    "编程语言学习/Java/JavaSE 笔记（四）泛型程序设计.md",
     "编程语言学习/Java/Java语法基础.md",
     "Resourses/Pasted image 20240417205748 1 1.png",
-    "Resourses/Pasted image 20240417185235 1 1.png",
-    "Resourses/Pasted image 20240417205620 1 1.png",
     "数据结构与算法/二叉树/层序遍历/层序遍历.md",
     "数据结构与算法/二叉树/层序遍历/二叉树的层平均值.md",
     "数据结构与算法/二叉树/回溯+二叉树/二叉树的所有路径.md",
-    "Resourses/Pasted image 20240417185258 1 1.png",
     "数据结构与算法/回溯算法",
     "编程语言学习/Java/JavaSE 笔记（一）面向过程编程.md",
-    "Resourses/450.删除二叉搜索树中的节点.gif",
     "数据结构与算法/二叉树/迭代遍历.md",
     "数据结构与算法/二叉树/递归遍历.md",
     "数据结构与算法/二叉树/理论基础.md",
-    "Resourses/Pasted image 20240416101515.png",
     "数据结构与算法/二叉树/二叉搜索树/把二叉搜索树转换为累加树.md",
-    "数据结构与算法/二叉树/构造二叉树/将有序数组转换为二叉搜索树.md",
-    "数据结构与算法/二叉树/二叉搜索树/修剪二叉搜索树.md",
-    "数据结构与算法/二叉树/二叉搜索树/删除二叉搜索树中的节点.md",
-    "数据结构与算法/二叉树/二叉搜索树/二叉搜索树中的插入操作.md",
     "Users/nagocoler/Library",
     "Users/nagocoler",
     "Users",
     "数据结构与算法/二叉树/二叉搜索树",
     "数据结构与算法/二叉树/回溯+二叉树",
     "项目/未命名",
-    "数据结构与算法/二叉树/构造二叉树",
-    "项目/苍穹外卖/Day01",
-    "项目/苍穹外卖"
+    "数据结构与算法/二叉树/构造二叉树"
   ]
 }
