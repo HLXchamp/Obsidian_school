@@ -34,8 +34,8 @@ mybatis:
 aliyun:  
   oss:  
     endpoint: https://oss-cn-hangzhou.aliyuncs.com  
-    accessKeyId: ...
-    accessKeySecret: ...  
+    accessKeyId:
+    accessKeySecret:  
     bucketName: web-tlias-hlx
 ```
 
@@ -62,7 +62,7 @@ spring.servlet.multipart.max-request-size=100MB
   
 #阿里云OSS配置  
 aliyun.oss.endpoint=https://oss-cn-hangzhou.aliyuncs.com  
-aliyun.oss.accessKeyId=...  
-aliyun.oss.accessKeySecret=...  
+aliyun.oss.accessKeyId=  
+aliyun.oss.accessKeySecret=
 aliyun.oss.bucketName=web-tlias-hlx
 ```
