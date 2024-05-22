@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/员工管理/文件传输.md",
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "accessKeyId",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +113,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -133,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/员工管理/文件传输.md",
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/员工管理/文件传输.md",
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/员工管理/文件传输.md"
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md"
               }
             }
           }
@@ -198,6 +199,10 @@
   },
   "active": "99d7be0a94268447",
   "lastOpenFiles": [
+    "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/员工管理/文件传输.md",
+    "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/参数配置化.md",
+    "项目/苍穹外卖/Day 03/2、新增菜品.md",
+    "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/@ConfigurationProperties.md",
     "项目/苍穹外卖/Day 07/5、清空购物车.md",
     "项目/苍穹外卖/Day 07/4、查看购物车.md",
     "Resourses/Pasted image 20240517154050.png",
@@ -233,9 +238,6 @@
     "项目/苍穹外卖/Day 04/5、起售停售套餐.md",
     "项目/苍穹外卖/Day 04/6、项目实战-套餐管理 - 参考答案.md",
     "项目/苍穹外卖/Day 04/4、修改套餐.md",
-    "项目/苍穹外卖/Day 03/5、修改菜品.md",
-    "项目/苍穹外卖/Day 03/4、删除菜品.md",
-    "项目/苍穹外卖/Day 04/3、删除套餐.md",
     "项目/苍穹外卖/Day 04/assets",
     "项目/苍穹外卖/Day 04",
     "八股/项目",
