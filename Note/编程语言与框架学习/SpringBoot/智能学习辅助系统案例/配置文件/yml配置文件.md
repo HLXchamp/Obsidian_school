@@ -36,7 +36,7 @@ aliyun:
     endpoint: https://oss-cn-hangzhou.aliyuncs.com  
     accessKeyId:
     accessKeySecret:  
-    bucketName: web-tlias-hlx
+    bucketName: 
 ```
 
 之前的properties：
@@ -64,5 +64,5 @@ spring.servlet.multipart.max-request-size=100MB
 aliyun.oss.endpoint=https://oss-cn-hangzhou.aliyuncs.com  
 aliyun.oss.accessKeyId=  
 aliyun.oss.accessKeySecret=
-aliyun.oss.bucketName=web-tlias-hlx
+aliyun.oss.bucketName=
 ```
