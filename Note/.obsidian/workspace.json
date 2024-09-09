@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "八股/Java/基础/基础篇（二）.md",
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "AccessKey",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +126,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "八股/Java/基础/基础篇（二）.md",
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "八股/Java/基础/基础篇（二）.md",
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "八股/Java/基础/基础篇（二）.md"
+                "file": "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/yml配置文件.md"
               }
             }
           }
@@ -211,8 +212,12 @@
   },
   "active": "b59884fc4c34153e",
   "lastOpenFiles": [
-    "八股/Java/JVM/Java内存区域详解（重点）.md",
+    "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/员工管理/文件传输.md",
+    "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/参数配置化.md",
+    "项目/苍穹外卖/Day 03/2、新增菜品.md",
+    "编程语言与框架学习/SpringBoot/智能学习辅助系统案例/配置文件/@ConfigurationProperties.md",
     "八股/Java/基础/基础篇（二）.md",
+    "八股/Java/JVM/Java内存区域详解（重点）.md",
     "八股/Java/JVM",
     "八股/Java/基础",
     "八股/Java/基础/基础篇（一）.md",
@@ -243,12 +248,8 @@
     "Resourses/Pasted image 20240814102954.png",
     "Resourses/Pasted image 20240814102901.png",
     "数据结构与算法/链表/其他链表题/随机链表的复制.md",
-    "数据结构与算法/链表/其他链表题/排序链表（未解决）.md",
-    "数据结构与算法/哈希表/Map作哈希/两数之和.md",
-    "数据结构与算法/哈希表/哈希表理论基础.md",
     "八股/开发工具",
     "Resourses/Pasted image 20240731143545.png",
-    "数据结构与算法/哈希表/Map作哈希/其他题.md",
     "Resourses/Pasted image 20240731104207.png",
     "Resourses/Pasted image 20240731104137.png",
     "Resourses/Pasted image 20240731102851.png",

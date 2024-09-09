@@ -35,8 +35,8 @@ aliyun:
   oss:  
     endpoint: https://oss-cn-hangzhou.aliyuncs.com  
     accessKeyId:
-    accessKeySecret:  
-    bucketName: 
+    accessKeySecret:
+    bucketName:
 ```
 
 之前的properties：
