@@ -734,7 +734,7 @@ public static void main(String[] args) {
 | **[\s\S]** | 匹配所有。\s 是匹配所有空白符，包括换行，\S 非空白符，不包括换行。 |
 |   **\w**   |         匹配字母、数字、下划线。等价于 [A-Za-z0-9_]          |
 
-当然，这里仅仅是对正则表达式的简单使用，实际上正则表达式内容非常多，如果需要完整学习正则表达式，可以到：https://www.runoob.com/regexp/regexp-syntax.html
+当然，这里仅仅是对正则表达式的简单使用，实际上正则表达式内容非常多，如果需要完整学习正则表达式，可以到：[正则表达式](https://www.runoob.com/regexp/regexp-syntax.html)
 
 正则表达式并不是只有Java才支持，其他很多语言比如JavaScript、Python等等都是支持正则表达式的。
 
