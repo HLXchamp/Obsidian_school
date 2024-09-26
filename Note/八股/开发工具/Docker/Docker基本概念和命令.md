@@ -139,7 +139,7 @@ Docker 设计时，就充分利用 **Union FS** 的技术，将其设计为**�
 
 **Docker Registry 公开服务** 是开放给用户使用、允许用户管理镜像的 Registry 服务。一般这类公开服务允许用户免费上传、下载公开的镜像，并可能提供收费服务供用户管理私有镜像。
 
-最常使用的 Registry 公开服务是官方的 **Docker Hub** ，这也是默认的 Registry，并拥有大量的高质量的官方镜像，网址为：[https://hub.docker.com/open in new window](https://hub.docker.com/ "https://hub.docker.com/") 。官方是这样介绍 Docker Hub 的：
+最常使用的 Registry 公开服务是官方的 **Docker Hub** ，这也是默认的 Registry，并拥有大量的高质量的官方镜像，网址为：[https://hub.docker.com](https://hub.docker.com/ "https://hub.docker.com/") 。官方是这样介绍 Docker Hub 的：
 
 > Docker Hub 是 Docker 官方提供的一项服务，用于与您的团队查找和共享容器镜像。
 
@@ -165,7 +165,7 @@ mariadb                           MariaDB is a community-developed fork of MyS�
 mysql/mysql-server                Optimized MySQL Server Docker images. Create…   650                                     [OK]
 ```
 
-在国内访问 **Docker Hub** 可能会比较慢国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 [时速云镜像库open in new window](https://www.tenxcloud.com/ "时速云镜像库")、[网易云镜像服务open in new window](https://www.163yun.com/product/repo "网易云镜像服务")、[DaoCloud 镜像市场open in new window](https://www.daocloud.io/ "DaoCloud 镜像市场")、[阿里云镜像库open in new window](https://www.aliyun.com/product/containerservice?utm_content=se_1292836 "阿里云镜像库")等。
+在国内访问 **Docker Hub** 可能会比较慢国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 [时速云镜像库](https://www.tenxcloud.com/ "时速云镜像库")、[网易云镜像服务](https://www.163yun.com/product/repo "网易云镜像服务")、[DaoCloud 镜像市场](https://www.daocloud.io/ "DaoCloud 镜像市场")、[阿里云镜像库](https://www.aliyun.com/product/containerservice?utm_content=se_1292836 "阿里云镜像库")等。
 
 除了使用公开服务外，用户还可以在 **本地搭建私有 Docker Registry** 。Docker 官方提供了 Docker Registry 镜像，可以直接使用做为私有 Registry 服务。开源的 Docker Registry 镜像只提供了 Docker Registry API 的服务端实现，足以支持 Docker 命令，不影响使用。但不包含图形界面，以及镜像维护、用户管理、访问控制等高级功能。
 
@@ -177,7 +177,7 @@ mysql/mysql-server                Optimized MySQL Server Docker images. Create�
 
 Docker 架构
 
-- **Dockerfile** 是一个文本文件，包含了一系列的指令和参数，用于定义如何构建一个 Docker 镜像。运行 `docker build`命令并指定一个 Dockerfile 时，Docker 会读取 Dockerfile 中的指令，逐步构建一个新的镜像，并将其保存在本地。
+- **Dockerfile** 是一个文本文件，包含了一系列的指令和参数，用于**定义如何构建一个 Docker 镜像**。运行 `docker build`命令并指定一个 Dockerfile 时，Docker 会读取 Dockerfile 中的指令，逐步构建一个新的镜像，并将其保存在本地。
 - `docker pull` 命令可以从指定的 Registry/Hub 下载一个镜像到本地，默认使用 Docker Hub。
 - `docker run` 命令可以从本地镜像创建一个新的容器并启动它。如果本地没有镜像，Docker 会先尝试从 Registry/Hub 拉取镜像。
 - `docker push` 命令可以将本地的 Docker 镜像上传到指定的 Registry/Hub。
@@ -309,7 +309,7 @@ docker volume rm my-vol
 
 Docker Compose 是 Docker 官方编排（Orchestration）项目之一，基于 Python 编写，**负责实现对 Docker 容器集群的快速编排**。通过 Docker Compose，开发者可以使用 YAML 文件来配置应用的所有服务，然后只需一个简单的命令即可创建和启动所有服务。
 
-Docker Compose 是开源项目，地址：[https://github.com/docker/composeopen in new window](https://github.com/docker/compose)。
+Docker Compose 是开源项目，地址：[https://github.com/docker/compose](https://github.com/docker/compose)。
 
 Docker Compose 的核心功能：
 

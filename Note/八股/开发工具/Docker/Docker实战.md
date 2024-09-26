@@ -479,7 +479,7 @@ test.html
 
 容器内确实已经有了该文件，那接下来我们编写一个简单的 Web 应用：
 
-```
+```java
 public class HelloServlet extends HttpServlet {
 
     @Override
@@ -566,3 +566,74 @@ Loaded image: my_tomcat:1.0
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 my_tomcat           1.0                 79ab047fade5        7 minutes ago       463MB
 ```
+
+
+## 实战面试题
+
+### 在Docker中，如何管理和查看容器日志?
+
+在Docker中，管理和查看容器日志主要通过`docker logs`命令来实现。这个命令会显示指定容器的日志输出。详情见[在 Docker 中，如何管理和查看容器日志？](https://www.mianshiya.com/bank/1812067352871829505/question/1811361114546544641)。
+
+### 在Docker 中，如何进行数据卷管理?
+
+在Docker中，数据卷（Volumes）是Docker推荐的用于持久化数据的机制。数据卷管理主要包括创建、挂载、查看、备份和删除等操作。简单来说:
+
+1. 创建数据卷：使用`docker volume create`命令。
+2. 挂载数据卷：在启动容器时，用`-v`或者`--mount`选项挂载数据卷。
+3. 查看数据卷：使用`docker volume ls`查看当前所有的卷。
+4. 查看特定数据卷详情：使用`docker volume inspect` 。
+5. 删除数据卷：停止使用该卷的容器后，使用`docker volume rm`删除数据卷。
+
+详情见[在 Docker 中，如何进行数据卷管理？](https://www.mianshiya.com/bank/1812067352871829505/question/1811361114840145922)。
+
+### 在Docker中，如何配置容器的网络?
+
+我们可以通过以下几种方式配置Docker容器的网络:
+
+1. 桥接网络(Bridge Network)：这是Docker默认使用的网络模式，会创建一个名为`bridge`的虚拟网络,所有容器默认都会连接到这个`bridge`网络上。
+2. 主机网络(Host Network)：让容器和宿主机共享IP地址，如果容器需要高性能的网络通信，可以考虑使用这种模式。
+3. 无网络(None Network)︰使容器没有网络接口，适用于需要完全隔离网络的场景。
+4. 覆盖网络(Overlay Network)：适用于`Docker Swarm`或`Kubernetes`，这种方式可以连接多台Docker主机上的容器。
+5. macvlan网络(Macvlan Network)︰容器会获取一个唯一的MAC地址，并且可以通过宿主机的物理网络接口来发送和接收数据包。
+
+我们可以使用`docker network create`命令来创建自定义网络，然后使用`docker run --network=<network-name>`将容器连接到指定的网络。详情见[在 Docker 中，如何配置容器的网络？](https://www.mianshiya.com/bank/1812067352871829505/question/1811361115121164289)。
+
+### 在Docker中，如何优化容器启动时间?
+
+在Docker 中，要优化容器启动时间，可以采取以下几种措施：
+
+1. 使用较小的基础镜像：选择精简的基础镜像，例如`alpine`，可以显著减少下载和加载时间。
+2. 减少镜像层数；每一层都会增加容器启动的开销，精简 Dockerfile，合并多个`RUN`命令，将有助于减少层数。
+3. 利用缓存：在构建镜像时尽量利用 Docker 的缓存功能，避免每次都重建镜像。
+4. 适当配置健康检查：配置适当的健康检查策略，让容器可以尽快转为运行状态，而不是卡在启动过程中。
+5. 预启动依赖服务︰提前启动容器运行所需的依赖服务，如数据库等，可降低容器启动后的等待时间。
+6. 本地化镜像：将常用的容器镜像保存在本地镜像库中，避免每次启动时从远程仓库拉取。
+
+详情见[在 Docker 中，如何优化容器启动时间？](https://www.mianshiya.com/bank/1812067352871829505/question/1811361115406376962)。
+
+### 在Docker中，如何实现容器之间的通信?
+
+在Docker中，容器之间的通信可以通过以下几种方式来实现:
+
+1. 使用同一个网络：将多个容器连接到同一个 Docker 网络中，这样容器之间可以通过容器名称进行互相通信。
+2. 端口映射：将容器的端口映射到宿主机的端口，通过宿主机的 IP 和映射的端口进行通信。
+3) Docker Compose：使用 Docker Compose 来编排多个服务，可以为每个服务定义网络，并对网络进行配置。
+4) 共享网络命名空间：通过创建共享网络命名空间的方式，使多个容器共享网络设置。
+
+详情见[在 Docker 中，如何实现容器之间的通信？](https://www.mianshiya.com/bank/1812067352871829505/question/1811361115620286466)。
+
+### 请解释什么是Docker Swarm,并描述其主要功能。
+
+`Docker Swarm`是 Docker 平台内置的集群管理和编排具。它允许你将多个 Docker 主机集合成一个虚拟的 Docker 主机，从而实现容器的集群管理和自动化部署。Swarm 提供了服务发现、负载均衡、扩展和滚动更新等功能，使得集群管理变得更加简单和高效。详情见[请解释什么是 Docker Swarm，并描述其主要功能。](https://www.mianshiya.com/bank/1812067352871829505/question/1811361115830001666)
+
+### 在Docker中，如何配置和管理环境变量?
+
+在Docker中配置和管理环境变量有几种主要方式，这些方式可以帮助我们在不同场景下灵活使用环境变量：
+
+1. 在 Dockerfile 中使用`ENV` 指令。
+2. 通过`docker run`命令的`-e`标志传递环境变量。
+3. 使用 Docker Compose 文件中的`environment` 段。
+4. 在外部`.env`文件中定义环境变量，并在 Docker Compose文件中引用。
+
+详情见[在 Docker 中，如何配置和管理环境变量？ ](https://www.mianshiya.com/bank/1812067352871829505/question/1811361116060688386)
+

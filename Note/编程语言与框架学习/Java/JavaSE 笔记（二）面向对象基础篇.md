@@ -1114,22 +1114,23 @@ public class Person {
 }
 ```
 
-通过这种方式，我们可以实现单例模式：
+通过这种方式，我们可以实现**单例模式**：
 
-> ```java
-> public class Test {
->     private static Test instance;
->     
->     private Test(){}
->     
->     public static Test getInstance() {
->         if(instance == null) 
->             instance = new Test();
->         return instance;
->     }
-> }
-> ```
->
+ ```java
+ public class Test {
+     private static Test instance;
+     
+     private Test(){}
+     
+     public static Test getInstance() {
+         if(instance == null) 
+             instance = new Test();
+         return instance;
+     }
+ }
+ ```
+
+
 > **单例模式**就是全局只能使用这一个对象，不能创建更多的对象，我们就可以封装成这样，关于单例模式的详细介绍，还请各位小伙伴在《Java设计模式》视频教程中再进行学习。
 
 封装思想其实就是**把实现细节给隐藏了**，外部只需知道这个方法是什么作用，而无需关心实现，要用什么由类自己来做，不需要外面来操作类内部的东西去完成，**封装就是通过访问权限控制**来实现的。
@@ -1168,7 +1169,7 @@ public class Student extends Person{   //学生类
 }
 ```
 
-类的继承可以不断向下，但是**同时只能继承一个类**，同时，标记为`final`的类不允许被继承（final关键字表示这个类已经是**最终形态，不能继承**）：
+类的继承可以不断向下，但是**同时只能继承一个类**，同时，标记为`final`的类不允许被继承（`final`关键字表示这个类已经是**最终形态，不能继承**）：
 
 ```java
 public final class Person {  //class前面添加final关键字表示这个类已经是最终形态，不能继承
@@ -1299,7 +1300,7 @@ public static void main(String[] args) {
 
 此时直接出现了类型转换异常，因为本身不是这个类型，强转也没用。
 
-那么如果我们想要判断一下某个变量所引用的对象到底是什么类，那么该怎么办呢？
+那么如果我们想要判断一下某个变量所引用的对象到底是什么类，那么该怎么办呢？我们可以使用`instanceof`关键字来对类型进行判断。
 
 ```java
 public static void main(String[] args) {
@@ -1467,7 +1468,7 @@ public static void main(String[] args) {
 
 ### 方法的重写
 
-注意，方法的重写不同于之前的方法重载，不要搞混了，方法的**重载是为某个方法提供更多种类**，而方法的**重写是覆盖原有的方法**实现，比如我们现在不希望使用Object类中提供的`equals`方法，那么我们就可以将其重写了（重写方法要求与父类的定义完全一致）：
+注意，方法的重写不同于之前的方法重载，不要搞混了，方法的**重载是为某个方法提供更多种类**，而方法的**重写是覆盖原有的方法**实现，比如我们现在不希望使用Object类中提供的`equals`方法，那么我们就可以将其重写了（重写方法要求与父类的定义完全一致）[[基础篇（一）#<font color=" ff0000">重载和重写有什么区别？</font>|参考：重载与重写的区别]]：
 
 **字符串内容**的比较，不能使用== ，==必须使用equals方法！
 
@@ -1883,7 +1884,7 @@ public static void main(String[] args) throws CloneNotSupportedException {  //�
 
 通过实现接口，我们就可以很轻松地完成对象的克隆了，在我们之后的学习中，还会经常遇到接口的使用。
 
-**注意：** 以下内容为选学内容，在设计模式篇视频教程中有详细介绍。
+**注意：** 以下内容为选学内容，在设计模式篇视频教程中有详细介绍，参考[[基础篇（二）#深拷贝和浅拷贝区别了解吗？什么是引用拷贝？]]。
 
 > 克隆操作可以完全复制一个对象的所有属性，但是像这样的拷贝操作其实也分为浅拷贝和深拷贝。
 >
@@ -1892,14 +1893,15 @@ public static void main(String[] args) throws CloneNotSupportedException {  //�
 >
 > 那么clone方法出来的克隆对象，是深拷贝的结果还是浅拷贝的结果呢？
 >
-> ```java
-> public static void main(String[] args) throws CloneNotSupportedException {
->     Student student = new Student("小明", 18, "男");
->     Student clone = (Student) student.clone();
->     System.out.println(student.name == clone.name);
-> }
-> ```
->
+
+ ```java
+ public static void main(String[] args) throws CloneNotSupportedException {
+     Student student = new Student("小明", 18, "男");
+     Student clone = (Student) student.clone();
+     System.out.println(student.name == clone.name);
+ }
+ ```
+
 > ![image-20220922110750697](https://s2.loli.net/2022/09/22/gpM1iukyoSdn2RE.png)
 >
 > 可以看到，虽然Student对象成功拷贝，但是其内层对象并没有进行拷贝，依然只是对象引用的复制，所以Java为我们提供的`clone`方法只会进行**浅拷贝**。
