@@ -8,51 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4f90f70ea2a1fcaf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "数据结构与算法/哈希表/哈希表理论基础.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "79cc607527aad53d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "八股/开发工具/Docker/Docker基本概念和命令.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "398dc2f29580e23c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "八股/Java/集合/源码分析/ArrayList 源码分析.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2edc1cb516abd7ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "编程语言与框架学习/Java/JavaSE 笔记（二）面向对象基础篇.md",
+                "file": "八股/Java/基础/基础篇（一）.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "基础篇（一）"
             }
           },
           {
@@ -61,10 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "八股/Java/基础/基础篇（一）.md",
+                "file": "编程语言与框架学习/Java/JavaSE 笔记（一）面向过程编程.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "JavaSE 笔记（一）面向过程编程"
             }
           },
           {
@@ -76,7 +44,9 @@
                 "file": "编程语言与框架学习/Java/JavaSE 笔记（三）面向对象高级篇.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "JavaSE 笔记（三）面向对象高级篇"
             }
           },
           {
@@ -88,11 +58,12 @@
                 "file": "编程语言与框架学习/Java/JavaSE 笔记（四）泛型程序设计.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "JavaSE 笔记（四）泛型程序设计"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +83,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "custom"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -127,7 +100,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -135,7 +110,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -158,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "八股/开发工具/Docker/Docker基本概念和命令.md",
+                "file": "八股/Java/IO/Java IO 模型详解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +143,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Java IO 模型详解 的反向链接列表"
             }
           },
           {
@@ -175,10 +154,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "八股/开发工具/Docker/Docker基本概念和命令.md",
+                "file": "八股/Java/IO/Java IO 模型详解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Java IO 模型详解 的出链列表"
             }
           },
           {
@@ -189,7 +170,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -198,8 +181,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "八股/开发工具/Docker/Docker基本概念和命令.md"
-              }
+                "file": "八股/Java/IO/Java IO 模型详解.md"
+              },
+              "icon": "lucide-list",
+              "title": "Java IO 模型详解 的大纲"
             }
           }
         ]
@@ -221,54 +206,55 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "79cc607527aad53d",
+  "active": "2edc1cb516abd7ac",
   "lastOpenFiles": [
-    "八股/开发工具/Docker/Docker实战.md",
-    "八股/Redis/Redis 常见面试题.md",
-    "[在.md",
-    "八股/小知识/布隆过滤器.md",
-    "编程语言与框架学习/Linux/常见命令.md",
-    "编程语言与框架学习/Linux",
-    "八股/Redis/Redis实战.md",
-    "八股/计网/基础篇/基础知识.md",
-    "八股/Redis/Redis难点.md",
-    "数据结构与算法/哈希表/哈希表理论基础.md",
-    "Pasted image 20240920095023.png",
-    "八股/小知识",
-    "Resourses/Pasted image 20240920092824.png",
-    "八股/Java/集合/重要知识点（上）.md",
-    "八股/Java/集合/重要知识点（下）.md",
-    "八股/Java/集合/集合使用注意事项.md",
-    "八股/Java/基础/基础篇（三）.md",
-    "八股/Java/基础/基础篇（二）.md",
-    "项目/苍穹外卖/Day 05/1、Redis入门与数据类型.md",
-    "八股/项目/随笔.md",
-    "八股/Redis/Redis 常见数据类型和应用场景.md",
-    "八股/Java/集合/源码分析/ArrayList 源码分析.md",
-    "Resourses/Pasted image 20240912104434.png",
-    "数据结构与算法/二叉树/层序遍历/在每个树行中找最大值.md",
-    "八股/Java/集合/源码分析/PriorityQueue 源码分析.md",
-    "八股/Java/集合/源码分析/DelayQueue 源码分析.md",
-    "八股/Java/集合/源码分析/ArrayBlockingQueue 源码分析.md",
-    "八股/Java/集合/源码分析/CopyOnWriteArrayList 源码分析.md",
-    "八股/Java/集合/源码分析/LinkedHashMap 源码分析.md",
-    "八股/Java/集合/源码分析/ConcurrentHashMap 源码分析.md",
-    "八股/Java/集合/源码分析/HashMap源码分析.md",
-    "八股/Java/集合/源码分析",
-    "八股/Java/集合",
-    "八股/Java/重要知识点",
-    "八股/Java/IO",
-    "八股/Java/JVM",
-    "八股/Java/基础",
-    "Resourses/1626927345-DZmfxB-PascalTriangleAnimated2.gif",
-    "Resourses/Pasted image 20240730094648.png",
-    "数据结构与算法/动态规划/其他问题",
-    "Resourses/Pasted image 20240824162007.png",
-    "数据结构与算法/笔试题",
-    "Resourses/Pasted image 20240814102954.png",
-    "Resourses/Pasted image 20240814102901.png",
-    "Resourses/Pasted image 20240731143545.png",
-    "Resourses/Pasted image 20240731104207.png",
-    "未命名.canvas"
+    "八股/Java/重要知识点/未命名.md",
+    "八股/Java/基础/基础篇（一）.md",
+    "数据结构与算法/数组&二分查找/螺旋矩阵/螺旋矩阵Ⅱ.md",
+    "八股/Java/JVM/Java内存区域详解（重点）.md",
+    "编程语言与框架学习/Java/JavaSE 笔记（一）面向过程编程.md",
+    "编程语言与框架学习/Java/Java语法基础.md",
+    "编程语言与框架学习/Java/Java技术体系和IDEA应用.md",
+    "代办.md",
+    "编程语言与框架学习/Java/JavaSE 笔记（二）面向对象基础篇.md",
+    "Diary/2025-02-06.md",
+    "Diary/2025-01-16.md",
+    "数据结构与算法/回溯算法/排序问题/全排列 II.md",
+    "数据结构与算法/回溯算法/排序问题/全排列.md",
+    "数据结构与算法/回溯算法/理论基础.md",
+    "数据结构与算法/回溯算法/子集问题/子集 II.md",
+    "数据结构与算法/动态规划/基础题目/斐波那契数.md",
+    "数据结构与算法/动态规划/理论基础.md",
+    "数据结构与算法/动态规划/记忆化搜索/购买水果需要的最少金币数.md",
+    "数据结构与算法/动态规划/其他问题/杨辉三角.md",
+    "数据结构与算法/动态规划/记忆化搜索",
+    "数据结构与算法/图论/岛屿数量.md",
+    "数据结构与算法/图论/（ACM）所有可达路径.md",
+    "数据结构与算法/图论/所有可能的路径.md",
+    "数据结构与算法/图论/深度优先搜索（DFS）理论基础.md",
+    "数据结构与算法/二叉树/构造二叉树/将有序数组转换为二叉搜索树.md",
+    "数据结构与算法/二叉树/构造二叉树/从中序与后序遍历序列构造二叉树.md",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "八股/Java/IO/Java IO 模型详解.md",
+    "未命名 1",
+    "未命名",
+    "Resourses/Pasted image 20250122160429.png",
+    "Resourses/Pasted image 20241219105221.png",
+    "Obsidian_school/Note/Pasted image 20240920095023.png",
+    "编程语言与框架学习/NIO & Netty",
+    "Resourses/Pasted image 20250109095325.png",
+    "Resourses/Pasted image 20250109094822.png",
+    "Resourses/Pasted image 20250107125724.png",
+    "Resourses/Pasted image 20250107125131.png",
+    "Resourses/Pasted image 20250105114103.png",
+    "Resourses/Pasted image 20250105114024.png",
+    "数据结构与算法/数组&二分查找/数组其他力扣题/差分数组",
+    "Resourses/Pasted image 20250104122417.png",
+    "数据结构与算法/字符串/字符串其他力扣题",
+    "项目/RPC框架",
+    "研究生课程/机器学习导论/机器学习.pdf",
+    "Obsidian_school/project/sky-take-out/sky-server/src/main/java/com/sky/service/impl/UserServiceImpl.java",
+    "Obsidian_school/project/sky-take-out/sky-server/src/main/java/com/sky/service/impl/ShoppingCartServiceImpl.java"
   ]
 }

@@ -46,6 +46,8 @@ if (i > 0 && nums[i] == nums[i - 1] && used[i - 1] == false) {
 
 #### 整体代码
 
+一定要**先排序**！
+
 ```java
 class Solution {
     List<Integer> path = new ArrayList<>();
